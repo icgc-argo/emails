@@ -5,26 +5,54 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="{{root}}css/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600&display=swap"
+      rel="stylesheet"
+      type="text/css"
+      />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>{{subject}}</title>
-    <!-- <style> -->
   </head>
   <body>
-    <span class="preheader">{{description}}</span>
-    <table class="body">
-      <tr>
-        <td class="center" align="center" valign="top">
-          <center>
-            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
-            {{> body}}
-          </center>
-        </td>
-      </tr>
-    </table>
+    <center>
+      <spacer size="24"></spacer>
+
+      <a href="#" class="small">
+        View this email in your browser
+      </a>
+
+      <spacer size="39"></spacer>
+
+      <img alt="" src="https://i.ibb.co/vhpRbYt/logo-primary.png" height="36px"/>
+      <spacer size="30"></spacer>
+    </center>
+    <container class="content">
+      <wrapper class="content__title">
+        <h4 class="text-center">{{title}}</h4>
+      </wrapper>
+
+      <div class="content__body">
+        {{> body}}
+      </div>
+    </container>
+
+
+    <spacer size="20"></spacer>
+
+    <center class="footer">
+      <div>
+        <a href="">Contact</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<a href="">Documentation</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+        <a href="">Privacy Policy</a>
+      </div>
+      <p class="footer__copyright">
+        © 2020 ICGC ARGO. All rights reserved.
+      </p>
+    </center>
+
     <!-- prevent Gmail on iOS font size manipulation -->
-   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+    <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
   </body>
 </html>
 
