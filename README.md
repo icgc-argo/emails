@@ -1,5 +1,7 @@
 # Email templates
 
+https://argo-emails.netlify.com
+
 ### Develop
 
 Install the dependencies
