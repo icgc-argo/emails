@@ -6,7 +6,7 @@ title: You have been invited to join a program
 <row>
   <columns small="12">
     <p>Dear $firstName $lastName,</p>
-    <p>You have been invited to join the following program</p>
+    <p>You have been invited to join the following program:</p>
     <table class="program-box">
       <tbody>
         <tr>
@@ -16,25 +16,25 @@ title: You have been invited to join a program
           <td>
             <strong>Program Name: </strong>
           </td>
-          <td>
+          <td class="program-box__value">
             $programShortName
           </td>
         </tr>
 
         <tr>
           <td>
-            <strong> Role: </strong>
+            <strong>Role: </strong>
           </td>
-          <td>
+          <td class="program-box__value">
             $role
           </td>
         </tr>
 
         <tr>
           <td>
-            <strong> Use this Email: </strong>
+            <strong>Use this Email: </strong>
           </td>
-          <td>
+          <td class="program-box__value">
             $email
           </td>
         </tr>
@@ -42,7 +42,7 @@ title: You have been invited to join a program
     </table>
 
     <p>
-      You will have permission to access and submit program data, provided that you also have <a href="">DACO approval</a>. For more information about joining a program or about your program role, <a href="">check out our documentation</a>.
+      You will have permission to access and submit program data, provided that you also have <a href="$dacoLink">DACO approval</a>. For more information about joining a program or about your program role, <a href="$docLink">check out our documentation</a>.
     <button href="$joinProgramLink">JOIN THE PROGRAM</button>
     <p>
       We appreciate your participation in ICGC ARGO.
